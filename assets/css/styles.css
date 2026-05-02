@@ -417,6 +417,7 @@ h1, h2, h3, h4 {
   gap: clamp(1rem, 2vw, 1.6rem);
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
 }
+.grid-cards.cols-2 { grid-template-columns: repeat(2, 1fr); }
 .grid-cards.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-cards.cols-4 { grid-template-columns: repeat(4, 1fr); }
 
@@ -632,6 +633,10 @@ h1, h2, h3, h4 {
 
   .social-grid { grid-template-columns: 1fr; }
   .grid-cards.cols-3, .grid-cards.cols-4 { grid-template-columns: 1fr 1fr; }
+  /* Categories with only 2 photos collapse to a single column on phone so each
+     image fills the width and reads at full size — avoids the "muy chiquitas" feel. */
+  .grid-cards.cols-2 { grid-template-columns: 1fr; }
+  .grid-cards.cols-2 .card { aspect-ratio: 4 / 3; }
   .card.tall { grid-row: auto; aspect-ratio: 4 / 5; }
 }
 
