@@ -372,6 +372,7 @@ h1, h2, h3, h4 {
 #porque .section-eyebrow,
 #porque .section-title { justify-content: center; margin-inline: auto; }
 #porque .section-eyebrow { display: inline-flex; }
+#porque p { margin-inline: auto; max-width: 60ch; }
 #porque .ornament-deco {
   position: relative;
   display: block;
@@ -483,6 +484,43 @@ h1, h2, h3, h4 {
 .card.feature .caption { font-size: 1.6rem; padding: 2rem 2rem 1.5rem; }
 
 .card.tall { aspect-ratio: 3 / 5; grid-row: span 2; }
+
+/* ============ Carga progresiva por categoría ============ */
+.card.is-collapsed { display: none; }
+.show-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(1.6rem, 3vw, 2.4rem);
+}
+.show-more-btn {
+  background: transparent;
+  color: var(--cherry);
+  border: 1.5px solid var(--cherry);
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+.show-more-btn:hover {
+  background: var(--cherry);
+  color: var(--cream);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+.show-more-btn .arrow {
+  width: 1em; height: 1em;
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M6 9l6 6 6-6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/contain no-repeat;
+          mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M6 9l6 6 6-6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/contain no-repeat;
+  transition: transform 0.25s ease;
+}
+.show-more-btn:hover .arrow { transform: translateY(2px); }
 
 /* ============ REDES ============ */
 .social-grid {
@@ -621,6 +659,11 @@ h1, h2, h3, h4 {
   .about-grid { grid-template-columns: 1fr; }
   .grid-cards.cols-3, .grid-cards.cols-4 { grid-template-columns: repeat(2, 1fr); }
   .category-head { flex-direction: column; align-items: start; gap: 0.6rem; }
+
+  .hero .ornament-1 { width: 64px; height: 64px; top: 2%; left: 2%; }
+  .hero .ornament-2 { width: 52px; height: 52px; top: auto; bottom: 4%; left: 4%; }
+  .hero .ornament-3 { width: 44px; height: 44px; top: 3%; right: 3%; }
+  #porque .ornament-deco { width: 56px; height: 56px; }
 }
 
 @media (max-width: 720px) {
@@ -638,6 +681,10 @@ h1, h2, h3, h4 {
   .grid-cards.cols-2 { grid-template-columns: 1fr; }
   .grid-cards.cols-2 .card { aspect-ratio: 4 / 3; }
   .card.tall { grid-row: auto; aspect-ratio: 4 / 5; }
+
+  .hero .ornament-1 { width: 52px; height: 52px; top: 1.5%; left: 2%; opacity: 0.5; }
+  .hero .ornament-2 { width: 44px; height: 44px; top: auto; bottom: 3%; left: 3%; opacity: 0.4; }
+  .hero .ornament-3 { width: 38px; height: 38px; top: 2%; right: 3%; opacity: 0.45; }
 }
 
 @media (max-width: 480px) {
