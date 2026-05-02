@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sweet Cherry · Repostería artesanal de Daniela Domínguez Castillo</title>
+  <meta name="description" content="Sweet Cherry es la repostería artesanal de Daniela Domínguez Castillo: galletas, pasteles, tartas, petit fours, postres personalizados y gelatinas hechos con cariño." />
+  <meta name="theme-color" content="#A82323" />
+  <link rel="icon" type="image/png" href="logo/image.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sweet Cherry · Repostería artesanal" />
+  <meta property="og:description" content="Postres caseros hechos con cariño por Daniela Domínguez Castillo." />
+  <meta property="og:image" content="logo/image.png" />
+  <meta property="og:locale" content="es_MX" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#inicio" aria-label="Sweet Cherry — inicio">
+        <img src="logo/image.png" alt="" />
+        <span class="brand-name">Sweet Cherry</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+      <nav class="nav" id="primary-nav" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#porque">El porqué</a>
+        <a href="#postres">Postres</a>
+        <a href="#redes">Redes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <span class="ornament trigo ornament-1" aria-hidden="true" style="--r:-12deg"></span>
+      <span class="ornament globo ornament-2" aria-hidden="true"></span>
+      <span class="ornament rebanada ornament-3" aria-hidden="true" style="--r:18deg"></span>
+
+      <div class="container hero-grid">
+        <div class="reveal">
+          <p class="hero-eyebrow">Repostería artesanal</p>
+          <h1>
+            Sweet Cherry
+            <span class="accent">por Daniela Domínguez Castillo</span>
+          </h1>
+          <p class="lede">Postres caseros hechos a mano con ingredientes nobles, recetas pacientes y cariño en cada detalle. Desde galletas hasta pasteles personalizados que celebran momentos.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#postres">Ver postres <span class="arrow" aria-hidden="true"></span></a>
+            <a class="btn btn-ghost" href="#redes">Síguenos en redes</a>
+          </div>
+        </div>
+
+        <div class="hero-figure reveal" aria-hidden="true">
+          <div class="photo photo-1"><img src="Postres/Petit%20fours/Macarons.jpg" alt="" loading="eager" /></div>
+          <div class="photo photo-2"><img src="Postres/Personalizados/Vintage%20cake.jpg" alt="" loading="eager" /></div>
+          <div class="photo photo-3"><img src="Postres/Pasteles%20de%20linea/Tiramis%C3%BA_.jpg" alt="" loading="eager" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section bg-sage" id="sobre-mi">
+      <div class="container about-grid">
+        <div class="about-figure-wrap reveal">
+          <div class="about-figure">
+            <img src="Postres/Personalizados/Vintage%20cake_%281%29.jpg" alt="Pastel vintage decorado a mano por Daniela." loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="section-eyebrow">Sobre mí</p>
+          <h2 class="section-title">La cocina como forma de cariño.</h2>
+          <p class="section-lede">Hola, soy Dani, la persona detrás de este proyecto. Hornear se volvió mi forma de expresar cariño, por eso en cada creación la intención es transmitir ese amor y dulzura.</p>
+          <p>Busco crear momentos que se recuerden y se compartan. Todo está hecho cuidando el sabor y la presentación.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EL PORQUÉ ============ -->
+    <section class="section bg-cherry" id="porque">
+      <div class="container reveal">
+        <span class="ornament rodillo ornament-deco" aria-hidden="true"></span>
+        <p class="section-eyebrow">El porqué</p>
+        <h2 class="section-title">Cada postre cuenta una historia.</h2>
+        <p class="section-lede">Hay una razón detrás de cada receta, cada decoración y cada caja que sale de Sweet Cherry. Esta sección recoge esa historia.</p>
+        <!-- TODO: copy pendiente, Daniela lo entregará -->
+        <p class="placeholder">Espacio reservado para el manifiesto de Sweet Cherry: por qué Daniela hornea, qué busca compartir con quien prueba sus postres, y la promesa detrás de la marca.</p>
+      </div>
+    </section>
+
+    <!-- ============ POSTRES ============ -->
+    <section class="section" id="postres">
+      <div class="container">
+
+        <div class="catalog-intro reveal">
+          <p class="section-eyebrow">Catálogo</p>
+          <h2 class="section-title">Nuestros postres.</h2>
+          <p class="section-lede">Una pequeña muestra de lo que sale del horno. Cada categoría se hornea por encargo; la disponibilidad puede variar según la temporada.</p>
+        </div>
+
+        <!-- Galletas -->
+        <div class="category reveal" id="galletas">
+          <div class="category-head">
+            <h3>Galletas</h3>
+            <span class="category-meta">Para acompañar el café · 3 variedades</span>
+          </div>
+          <div class="grid-cards cols-3">
+            <figure class="card">
+              <img src="Postres/Galletas/Biscotti.jpg" alt="Biscotti horneado dos veces, crujiente." loading="lazy" decoding="async" />
+              <figcaption class="caption">Biscotti</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Galletas/Cazuelita%20de%20almendra_.jpg" alt="Cazuelita de almendra rellena." loading="lazy" decoding="async" />
+              <figcaption class="caption">Cazuelita de almendra</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Galletas/Centenarios_.jpg" alt="Galletas centenarias mexicanas." loading="lazy" decoding="async" />
+              <figcaption class="caption">Centenarios</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Pasteles de línea -->
+        <div class="category reveal" id="pasteles">
+          <div class="category-head">
+            <h3>Pasteles de línea</h3>
+            <span class="category-meta">Sabores de la casa · 10 variedades</span>
+          </div>
+          <div class="grid-cards">
+            <figure class="card">
+              <img src="Postres/Pasteles%20de%20linea/Cheesecake%20frutos%20rojos_.jpg" alt="Cheesecake con frutos rojos." loading="lazy" decoding="async" />
+              <figcaption class="caption">Cheesecake de frutos rojos</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Pasteles%20de%20linea/Coco_.jpg" alt="Pastel de coco." loading="lazy" decoding="async" />
+              <figcaption class="caption">Coco</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Pasteles%20de%20linea/Frutos%20rojos_.jpg" alt="Pastel de frutos rojos." loading="lazy" decoding="async" />
+              <figcaption class="caption">Frutos rojos</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Pasteles%20de%20linea/Pi%C3%B1a%20colada_.jpg" alt="Pastel de piña colada." loading="lazy" decoding="async" />
+              <figcaption class="caption">Piña colada</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Pasteles%20de%20linea/Tiramis%C3%BA_.jpg" alt="Tiramisú clásico." loading="lazy" decoding="async" />
+              <figcaption class="caption">Tiramisú</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Pasteles%20de%20linea/Zanahoria_.jpg" alt="Pastel de zanahoria con queso crema." loading="lazy" decoding="async" />
+              <figcaption class="caption">Zanahoria</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Pasteles%20de%20linea/Rosca%20chocolate_.jpg" alt="Rosca de chocolate." loading="lazy" decoding="async" />
+              <figcaption class="caption">Rosca de chocolate</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Pasteles%20de%20linea/Rosca%20chocolate%20y%20nuez_.jpg" alt="Rosca de chocolate con nuez." loading="lazy" decoding="async" />
+              <figcaption class="caption">Rosca de chocolate y nuez</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Pasteles%20de%20linea/Rosca%20de%20naranja_.jpg" alt="Rosca de naranja." loading="lazy" decoding="async" />
+              <figcaption class="caption">Rosca de naranja</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Pasteles%20de%20linea/Pionono%20de%20maracuy%C3%A1%20.jpg" alt="Pionono de maracuyá." loading="lazy" decoding="async" />
+              <figcaption class="caption">Pionono de maracuyá</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Petit fours -->
+        <div class="category reveal" id="petit-fours">
+          <div class="category-head">
+            <h3>Petit fours</h3>
+            <span class="category-meta">Bocados pequeños · 8 variedades</span>
+          </div>
+          <div class="grid-cards cols-4">
+            <figure class="card">
+              <img src="Postres/Petit%20fours/Macarons.jpg" alt="Macarons franceses." loading="lazy" decoding="async" />
+              <figcaption class="caption">Macarons</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Petit%20fours/Cocada.jpg" alt="Cocadas tradicionales." loading="lazy" decoding="async" />
+              <figcaption class="caption">Cocada</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Petit%20fours/Cupcakes%20oreo_.jpg" alt="Cupcakes con galleta Oreo." loading="lazy" decoding="async" />
+              <figcaption class="caption">Cupcakes Oreo</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Petit%20fours/Garibaldis.jpg" alt="Garibaldis con mermelada y grageas." loading="lazy" decoding="async" />
+              <figcaption class="caption">Garibaldis</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Petit%20fours/Muffins%20chocolate_.jpg" alt="Muffins de chocolate." loading="lazy" decoding="async" />
+              <figcaption class="caption">Muffins de chocolate</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Petit%20fours/Pastelito%20de%20zanahoria_.jpg" alt="Pastelito individual de zanahoria." loading="lazy" decoding="async" />
+              <figcaption class="caption">Pastelito de zanahoria</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Petit%20fours/Tartaletas%20de%20lim%C3%B3n_.jpg" alt="Tartaletas de limón con merengue." loading="lazy" decoding="async" />
+              <figcaption class="caption">Tartaletas de limón</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Petit%20fours/Tartaletas%20queso%20y%20frutos%20rojos_.jpg" alt="Tartaletas de queso y frutos rojos." loading="lazy" decoding="async" />
+              <figcaption class="caption">Tartaletas de queso y frutos rojos</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Personalizados -->
+        <div class="category reveal" id="personalizados">
+          <div class="category-head">
+            <h3>Personalizados</h3>
+            <span class="category-meta">Hechos para tu fecha · 7 piezas</span>
+          </div>
+          <div class="grid-cards cols-3">
+            <figure class="card">
+              <img src="Postres/Personalizados/Vintage%20cake.jpg" alt="Pastel vintage decorado con manga." loading="lazy" decoding="async" />
+              <figcaption class="caption">Vintage cake</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Personalizados/Vintage%20cake_%281%29.jpg" alt="Pastel vintage en tonos pastel." loading="lazy" decoding="async" />
+              <figcaption class="caption">Vintage cake</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Personalizados/Vintage%20cake_%282%29.jpg" alt="Pastel vintage con detalles florales." loading="lazy" decoding="async" />
+              <figcaption class="caption">Vintage cake</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Personalizados/Vintage%20cake_.jpg" alt="Pastel vintage con dedicatoria." loading="lazy" decoding="async" />
+              <figcaption class="caption">Vintage cake</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Personalizados/Cupcakes%20con%20fondant_.jpg" alt="Cupcakes con fondant decorado." loading="lazy" decoding="async" />
+              <figcaption class="caption">Cupcakes con fondant</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Personalizados/Cupcakes%20con%20fondant_%281%29.jpg" alt="Cupcakes con fondant en colores brillantes." loading="lazy" decoding="async" />
+              <figcaption class="caption">Cupcakes con fondant</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Personalizados/IMG_20250718_205643.jpg" alt="Pastel personalizado de Sweet Cherry." loading="lazy" decoding="async" />
+              <figcaption class="caption">Pastel personalizado</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Gelatina -->
+        <div class="category reveal" id="gelatina">
+          <div class="category-head">
+            <h3>Gelatina</h3>
+            <span class="category-meta">Postres frescos · 2 variedades</span>
+          </div>
+          <div class="grid-cards cols-3" style="grid-template-columns: 1fr 1fr;">
+            <figure class="card">
+              <img src="Postres/Gelatina/Mazap%C3%A1n_.jpg" alt="Gelatina sabor mazapán." loading="lazy" decoding="async" />
+              <figcaption class="caption">Mazapán</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Gelatina/Nuez.jpg" alt="Gelatina de nuez." loading="lazy" decoding="async" />
+              <figcaption class="caption">Nuez</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Tartas -->
+        <div class="category reveal" id="tartas">
+          <div class="category-head">
+            <h3>Tartas</h3>
+            <span class="category-meta">Frescas y caseras · 2 variedades</span>
+          </div>
+          <div class="grid-cards" style="grid-template-columns: 1fr 1fr;">
+            <figure class="card">
+              <img src="Postres/Tartas/Tarta%20de%20manzana_.jpg" alt="Tarta de manzana recién horneada." loading="lazy" decoding="async" />
+              <figcaption class="caption">Tarta de manzana</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="Postres/Tartas/tarta%20de%20queso%20.jpg" alt="Tarta de queso." loading="lazy" decoding="async" />
+              <figcaption class="caption">Tarta de queso</figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ REDES ============ -->
+    <section class="section bg-cherry" id="redes">
+      <div class="container">
+        <div class="reveal" style="text-align:center;">
+          <p class="section-eyebrow" style="display:inline-flex;">Redes sociales</p>
+          <h2 class="section-title" style="margin-inline:auto;">Síguenos y descubre cada nuevo postre.</h2>
+          <p class="section-lede" style="margin-inline:auto;">Publicamos novedades, sabores de temporada y encargos recientes. Etiquétanos cuando recibas tu pedido.</p>
+        </div>
+
+        <div class="social-grid">
+          <a class="social-card reveal" href="https://www.instagram.com/sweet_cherry._3" target="_blank" rel="noopener noreferrer" aria-label="Sweet Cherry en Instagram">
+            <div class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.012 4.85.07 1.17.054 1.8.25 2.23.413.56.218.96.478 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.058 1.27.07 1.65.07 4.85s-.012 3.58-.07 4.85c-.054 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63 3.35.94 2.68 1.36 2.01 2.03 1.34 2.7.92 3.37.61 4.16.31 4.92.11 5.8.05 7.07.01 8.34 0 8.75 0 12s.01 3.66.07 4.93c.06 1.27.26 2.15.56 2.91.31.79.73 1.46 1.4 2.13.67.67 1.34 1.09 2.13 1.4.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.66-.01 4.93-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.73 2.13-1.4.67-.67 1.09-1.34 1.4-2.13.3-.76.5-1.64.56-2.91.06-1.27.07-1.68.07-4.93s-.01-3.66-.07-4.93c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.73-1.46-1.4-2.13C21.3 1.36 20.63.94 19.84.63 19.08.33 18.2.13 16.93.07 15.66.01 15.25 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.17 6.17 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+            </div>
+            <span class="platform">Instagram</span>
+            <span class="handle">@sweet_cherry._3</span>
+            <span class="cta-row">Síguenos en Instagram <span class="arrow" aria-hidden="true"></span></span>
+          </a>
+
+          <a class="social-card reveal" href="https://www.facebook.com/people/Sweet-Cherry/61563098396653/" target="_blank" rel="noopener noreferrer" aria-label="Sweet Cherry en Facebook">
+            <div class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82V14.706h-3.13V11.084h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.733 0 1.325-.592 1.325-1.325V1.325C24 .593 23.408 0 22.675 0z"/></svg>
+            </div>
+            <span class="platform">Facebook</span>
+            <span class="handle">Sweet Cherry</span>
+            <span class="cta-row">Síguenos en Facebook <span class="arrow" aria-hidden="true"></span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo/image.png" alt="" />
+        <span class="footer-brand-name">Sweet Cherry</span>
+      </div>
+      <p class="footer-meta">© <span data-year>2026</span> Sweet Cherry · Daniela Domínguez Castillo · Repostería artesanal</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/sweet_cherry._3" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.012 4.85.07 1.17.054 1.8.25 2.23.413.56.218.96.478 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.058 1.27.07 1.65.07 4.85s-.012 3.58-.07 4.85c-.054 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63 3.35.94 2.68 1.36 2.01 2.03 1.34 2.7.92 3.37.61 4.16.31 4.92.11 5.8.05 7.07.01 8.34 0 8.75 0 12s.01 3.66.07 4.93c.06 1.27.26 2.15.56 2.91.31.79.73 1.46 1.4 2.13.67.67 1.34 1.09 2.13 1.4.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.66-.01 4.93-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.73 2.13-1.4.67-.67 1.09-1.34 1.4-2.13.3-.76.5-1.64.56-2.91.06-1.27.07-1.68.07-4.93s-.01-3.66-.07-4.93c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.73-1.46-1.4-2.13C21.3 1.36 20.63.94 19.84.63 19.08.33 18.2.13 16.93.07 15.66.01 15.25 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.17 6.17 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/people/Sweet-Cherry/61563098396653/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.408.593 24 1.325 24H12.82V14.706h-3.13V11.084h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.733 0 1.325-.592 1.325-1.325V1.325C24 .593 23.408 0 22.675 0z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
